@@ -44,7 +44,7 @@ export default function Experience() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="font-serif text-4xl md:text-5xl mb-16 text-center"
+                    className="font-serif text-4xl md:text-5xl mb-16 text-center font-semibold"
                 >
                     {t("exp_title")}
                 </motion.h2>
@@ -60,7 +60,7 @@ export default function Experience() {
                             className="mb-12 relative pl-8 md:pl-12"
                         >
                             {/* Dot */}
-                            <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-gray-800 rounded-full border-2 border-white ring-4 ring-background"></div>
+                            <div className="absolute -left-[9px] top-1.5 w-4 h-4 bg-foreground rounded-full border-2 border-background ring-4 ring-background shadow-sm"></div>
 
                             <div className="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
                                 <h3 className="font-serif text-xl md:text-2xl font-medium text-gray-900">

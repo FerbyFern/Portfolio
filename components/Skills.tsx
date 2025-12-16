@@ -90,7 +90,7 @@ export default function Skills() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="font-serif text-4xl md:text-5xl mb-16 text-center"
+                    className="font-serif text-4xl md:text-5xl mb-16 text-center font-semibold"
                 >
                     {t("skills_title")}
                 </motion.h2>
@@ -104,7 +104,7 @@ export default function Skills() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                         >
-                            <h3 className="font-serif text-2xl mb-6 text-gray-800 border-b border-gray-200 pb-2">
+                            <h3 className="font-serif text-2xl mb-6 text-gray-800 border-b border-gray-200 pb-2 font-semibold">
                                 {category.title}
                             </h3>
                             <div className="flex flex-wrap gap-3">

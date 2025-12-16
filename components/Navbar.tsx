@@ -23,9 +23,9 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
-                    ? "bg-white/85 backdrop-blur-md py-4 shadow-sm"
-                    : "bg-transparent py-8"
+            className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled
+                ? "bg-white/80 backdrop-blur-md py-8 [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]"
+                : "bg-transparent py-8"
                 }`}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">

@@ -18,13 +18,17 @@ export default function About() {
                         transition={{ duration: 0.8 }}
                         className="w-full md:w-1/2"
                     >
-                        <div className="relative aspect-[3/4] w-full max-w-md mx-auto overflow-hidden rounded-2xl shadow-2xl">
-                            <Image
-                                src="/images/profile.jpg"
-                                alt="Panalee Palasri"
-                                fill
-                                className="object-cover hover:scale-105 transition-transform duration-700"
-                            />
+                        <div className="relative w-full max-w-md mx-auto">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-[2px] z-10">
+                                <Image
+                                    src="/images/profile.jpg"
+                                    alt="Panalee Palasri"
+                                    fill
+                                    className="object-cover transition-transform duration-500 hover:scale-105"
+                                />
+                            </div>
+                            {/* Frame Effect */}
+                            <div className="absolute top-[15px] left-[15px] w-full h-full border border-foreground -z-0 transition-transform duration-500 hover:translate-x-[5px] hover:translate-y-[5px]"></div>
                         </div>
                     </motion.div>
 
@@ -35,7 +39,7 @@ export default function About() {
                         transition={{ duration: 0.8 }}
                         className="w-full md:w-1/2"
                     >
-                        <h2 className="font-serif text-4xl md:text-5xl mb-8 text-gray-900">
+                        <h2 className="font-serif text-4xl md:text-5xl mb-8 text-gray-900 font-semibold">
                             {t("about_title")}
                         </h2>
                         <p className="text-lg text-gray-600 leading-relaxed mb-8">

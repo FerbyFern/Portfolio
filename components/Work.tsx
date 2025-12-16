@@ -15,23 +15,23 @@ export default function Work() {
             role: t("proj_1_role"),
             desc: t("proj_1_desc"),
             image: "/images/leafy-cover.png",
-            link: "/project-leafy.html",
+            link: "/projects/leafy",
         },
         {
             id: 2,
             title: t("proj_2_title"),
             role: t("proj_2_role"),
             desc: t("proj_2_desc"),
-            image: null,
-            link: "/project-vansales.html",
+            image: "/images/vansales-details.png",
+            link: "/projects/vansales",
         },
         {
             id: 3,
             title: t("proj_3_title"),
             role: t("proj_3_role"),
             desc: t("proj_3_desc"),
-            image: null,
-            link: "/project-marvelous.html",
+            image: "/images/marvelous-details.png",
+            link: "/projects/marvelous",
         },
         {
             id: 4,
@@ -77,7 +77,7 @@ export default function Work() {
                                             className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         />
                                     ) : (
-                                        <div className="w-full h-full flex items-center justify-center text-gray-300">
+                                        <div className="w-full h-full flex items-center justify-center bg-secondary/40 text-white">
                                             <span className="text-4xl">●</span>
                                         </div>
                                     )}

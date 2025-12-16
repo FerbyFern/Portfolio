@@ -10,6 +10,10 @@ export default function Hero() {
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+            {/* Background Blobs */}
+            <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-[radial-gradient(circle,rgba(255,181,167,0.4)_0%,rgba(255,181,167,0)_70%)] blur-[80px] animate-blob mix-blend-multiply filter opacity-60"></div>
+            <div className="absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-[radial-gradient(circle,rgba(181,101,118,0.3)_0%,rgba(181,101,118,0)_70%)] blur-[80px] animate-blob animation-delay-2000 mix-blend-multiply filter opacity-60"></div>
+
             {/* Canvas Particle Background */}
             <ParticleBackground />
 
@@ -19,10 +23,10 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-medium mb-6 leading-tight">
+                    <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold mb-6 leading-tight">
                         Panalee Palasri
                         <br />
-                        <span className="block text-2xl md:text-3xl lg:text-4xl font-sans font-light italic text-secondary mt-4">
+                        <span className="block text-2xl md:text-3xl lg:text-4xl font-serif font-light italic text-secondary mt-4">
                             {t("hero_title")}
                         </span>
                     </h1>
