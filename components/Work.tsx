@@ -50,7 +50,7 @@ export default function Work() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="font-serif text-4xl md:text-5xl mb-16 text-center"
+                    className="font-serif text-4xl md:text-5xl mb-16 text-center font-semibold"
                 >
                     {t("work_title")}
                 </motion.h2>
@@ -87,7 +87,7 @@ export default function Work() {
                                 </div>
 
                                 <div className="p-8">
-                                    <h3 className="font-serif text-2xl mb-2 group-hover:text-accent transition-colors">
+                                    <h3 className="!font-sans text-2xl mb-2 group-hover:text-accent transition-colors font-semibold">
                                         {project.title}
                                     </h3>
                                     <p className="text-sm font-medium text-gray-500 mb-4 uppercase tracking-wider">

@@ -15,6 +15,7 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
+  --color-highlight: var(--highlight);
 
   --font-sans: var(--font-inter), var(--font-prompt), sans-serif;
   --font-serif: var(--font-playfair), serif;
@@ -39,7 +40,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-playfair), serif;
+}
+
+.font-serif {
+  font-family: var(--font-playfair), serif;
 }
 
 @keyframes blob {

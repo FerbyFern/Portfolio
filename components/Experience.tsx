@@ -70,7 +70,7 @@ export default function Experience() {
                                     {exp.date}
                                 </span>
                             </div>
-                            <h4 className="text-lg text-accent mb-3 font-medium">{exp.title}</h4>
+                            <h4 className="text-lg text-accent mb-3 font-medium !font-sans">{exp.title}</h4>
                             {exp.desc && (
                                 <p className="text-gray-600 leading-relaxed">{exp.desc}</p>
                             )}

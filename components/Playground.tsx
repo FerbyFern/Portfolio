@@ -21,7 +21,7 @@ export default function Playground() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="font-serif text-4xl md:text-5xl mb-4"
+                        className="font-serif text-4xl md:text-5xl mb-4 font-semibold"
                     >
                         {t("playground_title")}
                     </motion.h2>

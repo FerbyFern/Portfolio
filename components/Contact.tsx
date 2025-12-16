@@ -8,7 +8,7 @@ export default function Contact() {
     const { t } = useLanguage();
 
     return (
-        <section id="contact" className="py-20 md:py-32 bg-white">
+        <section id="contact" className="pt-20 md:pt-32 pb-8 bg-white">
             <div className="container mx-auto px-6 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

@@ -104,10 +104,13 @@ export default function Skills() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                         >
-                            <h3 className="font-serif text-2xl mb-6 text-gray-800 border-b border-gray-200 pb-2 font-semibold">
-                                {category.title}
-                            </h3>
-                            <div className="flex flex-wrap gap-3">
+                            <div className="flex flex-col items-center mb-6">
+                                <h3 className="font-serif text-2xl text-gray-800 font-semibold text-center mb-3">
+                                    {category.title}
+                                </h3>
+                                <div className="w-12 h-1 bg-highlight rounded-full"></div>
+                            </div>
+                            <div className="flex flex-wrap gap-3 justify-center">
                                 {category.skills.map((skill, skillIndex) => (
                                     <div
                                         key={skillIndex}

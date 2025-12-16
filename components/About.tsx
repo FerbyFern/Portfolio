@@ -19,7 +19,7 @@ export default function About() {
                         className="w-full md:w-1/2"
                     >
                         <div className="relative w-full max-w-md mx-auto">
-                            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-[2px] z-10">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl z-10">
                                 <Image
                                     src="/images/profile.jpg"
                                     alt="Panalee Palasri"
@@ -28,7 +28,7 @@ export default function About() {
                                 />
                             </div>
                             {/* Frame Effect */}
-                            <div className="absolute top-[15px] left-[15px] w-full h-full border border-foreground -z-0 transition-transform duration-500 hover:translate-x-[5px] hover:translate-y-[5px]"></div>
+                            <div className="absolute top-[15px] left-[15px] w-full h-full border border-foreground rounded-2xl -z-0 transition-transform duration-500 hover:translate-x-[5px] hover:translate-y-[5px]"></div>
                         </div>
                     </motion.div>
 
