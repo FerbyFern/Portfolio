@@ -26,7 +26,7 @@ export default function Hero() {
                     <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold mb-6 leading-tight">
                         Panalee Palasri
                         <br />
-                        <span className="block text-2xl md:text-3xl lg:text-4xl font-serif font-light italic text-highlight mt-4">
+                        <span className="block text-2xl md:text-3xl lg:text-4xl font-serif font-light italic text-primary mt-4">
                             {t("hero_title")}
                         </span>
                     </h1>
