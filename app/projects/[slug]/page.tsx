@@ -70,7 +70,7 @@ export default function ProjectDetail() {
             {/* Project Details */}
             <section className="container mx-auto px-6 pb-32">
                 {/* Meta Info */}
-                <div className="flex flex-wrap justify-center gap-12 md:gap-24 mb-16 border-b border-gray-200 pb-8">
+                <div className="flex flex-wrap justify-center gap-12 md:gap-24 mb-16 border-b border-gray-200 dark:border-gray-800 pb-8">
                     <div className="text-center">
                         <h3 className="text-sm uppercase text-accent mb-2">Role</h3>
                         <p className="text-lg font-medium">{project.meta.role}</p>
@@ -91,7 +91,7 @@ export default function ProjectDetail() {
                 <div className="max-w-3xl mx-auto">
                     <div className="mb-12">
                         <h2 className="font-serif text-3xl mb-6">Overview</h2>
-                        <p className="text-lg text-gray-600 leading-relaxed">
+                        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                             {project.overview}
                         </p>
                     </div>
@@ -100,7 +100,7 @@ export default function ProjectDetail() {
                         <h2 className="font-serif text-3xl mb-6">
                             {project.keySectionTitle}
                         </h2>
-                        <ul className="list-disc list-outside pl-5 space-y-3 text-lg text-gray-600 leading-relaxed">
+                        <ul className="list-disc list-outside pl-5 space-y-3 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                             {project.keyPoints.map((point, index) => (
                                 <li key={index}>{point}</li>
                             ))}
@@ -148,7 +148,7 @@ export default function ProjectDetail() {
                 </div>
             </section>
 
-            <footer className="py-8 text-center text-gray-500 text-sm">
+            <footer className="py-8 text-center text-gray-500 dark:text-gray-400 text-sm">
                 <p>&copy; 2025 Panalee Palasri. All rights reserved.</p>
             </footer>
         </main>

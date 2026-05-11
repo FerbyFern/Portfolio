@@ -24,7 +24,7 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled
-                ? "bg-white/80 backdrop-blur-md py-8 [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]"
+                ? "bg-white dark:bg-[#1C191A]/80 backdrop-blur-md py-8 [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]"
                 : "bg-transparent py-8"
                 }`}
         >
@@ -49,7 +49,7 @@ export default function Navbar() {
                     </ul>
 
                     {/* Language Switcher */}
-                    <div className="flex items-center gap-3 ml-8 border-l border-gray-300 pl-8">
+                    <div className="flex items-center gap-3 ml-8 border-l border-gray-300 dark:border-gray-700 pl-8">
                         <button
                             onClick={() => setLanguage("en")}
                             className={`transition-transform hover:scale-110 ${language === "en" ? "opacity-100 scale-110" : "opacity-50"
@@ -91,7 +91,7 @@ export default function Navbar() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-lg md:hidden flex flex-col items-center py-8 gap-6"
+                        className="absolute top-full left-0 w-full bg-white dark:bg-[#1C191A]/95 backdrop-blur-md shadow-lg md:hidden flex flex-col items-center py-8 gap-6"
                     >
                         {["about", "experience", "work", "skills", "contact"].map((item) => (
                             <Link

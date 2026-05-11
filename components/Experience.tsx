@@ -12,7 +12,7 @@ export default function Experience() {
             date: t("exp_date_1"),
             company: t("exp_role_1_company"),
             title: t("exp_role_1_title"),
-            desc: null,
+            desc: t("exp_role_1_desc"),
         },
         {
             id: 2,
@@ -49,7 +49,7 @@ export default function Experience() {
                     {t("exp_title")}
                 </motion.h2>
 
-                <div className="max-w-3xl mx-auto relative border-l border-gray-300 ml-4 md:ml-auto">
+                <div className="max-w-3xl mx-auto relative border-l border-gray-300 dark:border-gray-700 ml-4 md:ml-auto">
                     {experiences.map((exp, index) => (
                         <motion.div
                             key={exp.id}
@@ -63,16 +63,16 @@ export default function Experience() {
                             <div className="absolute -left-[9px] top-1.5 w-4 h-4 bg-foreground rounded-full border-2 border-background ring-4 ring-background shadow-sm"></div>
 
                             <div className="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
-                                <h3 className="font-serif text-xl md:text-2xl font-medium text-gray-900">
+                                <h3 className="font-serif text-xl md:text-2xl font-medium text-gray-900 dark:text-gray-100">
                                     {exp.company}
                                 </h3>
-                                <span className="text-sm text-gray-500 font-medium mt-1 md:mt-0">
+                                <span className="text-sm text-gray-500 dark:text-gray-400 font-medium mt-1 md:mt-0">
                                     {exp.date}
                                 </span>
                             </div>
                             <h4 className="text-lg text-accent mb-3 font-medium !font-sans">{exp.title}</h4>
                             {exp.desc && (
-                                <p className="text-gray-600 leading-relaxed">{exp.desc}</p>
+                                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{exp.desc}</p>
                             )}
                         </motion.div>
                     ))}

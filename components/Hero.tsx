@@ -36,7 +36,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed"
+                    className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
                     {t("hero_desc")}
                 </motion.p>
@@ -62,7 +62,7 @@ export default function Hero() {
                 transition={{ delay: 1, duration: 1 }}
                 className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
             >
-                <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center pt-2">
+                <div className="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full flex justify-center pt-2">
                     <div className="w-1 h-2 bg-gray-400 rounded-full"></div>
                 </div>
             </motion.div>

@@ -105,7 +105,7 @@ export default function Skills() {
                             transition={{ delay: index * 0.1 }}
                         >
                             <div className="flex flex-col items-center mb-6">
-                                <h3 className="font-serif text-2xl text-gray-800 font-semibold text-center mb-3">
+                                <h3 className="font-serif text-2xl text-gray-800 dark:text-gray-200 font-semibold text-center mb-3">
                                     {category.title}
                                 </h3>
                                 <div className="w-12 h-1 bg-highlight rounded-full"></div>
@@ -114,7 +114,7 @@ export default function Skills() {
                                 {category.skills.map((skill, skillIndex) => (
                                     <div
                                         key={skillIndex}
-                                        className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-gray-600 shadow-sm transition-colors cursor-default"
+                                        className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-[#1C191A] rounded-full border border-gray-200 dark:border-gray-800 text-sm text-gray-600 dark:text-gray-300 shadow-sm transition-colors cursor-default"
                                     >
                                         <skill.icon size={18} />
                                         <span>{skill.name}</span>

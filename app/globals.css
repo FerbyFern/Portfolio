@@ -9,6 +9,17 @@
   --highlight: #E5989B;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1C191A;
+    --foreground: #FFFCF9;
+    --primary: #FFB5A7;
+    --secondary: #B56576;
+    --accent: #A6A0B0;
+    --highlight: #E5989B;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

@@ -43,7 +43,7 @@ export default function Process() {
     ];
 
     return (
-        <section id="process" className="py-20 md:py-32 bg-white">
+        <section id="process" className="py-20 md:py-32 bg-white dark:bg-[#1C191A]">
             <div className="container mx-auto px-6">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}

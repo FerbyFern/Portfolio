@@ -44,7 +44,7 @@ export default function Work() {
     ];
 
     return (
-        <section id="work" className="py-20 md:py-32 bg-white">
+        <section id="work" className="py-20 md:py-32 bg-white dark:bg-[#1C191A]">
             <div className="container mx-auto px-6">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
@@ -66,9 +66,9 @@ export default function Work() {
                         >
                             <Link
                                 href={project.link}
-                                className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-transparent hover:border-secondary"
+                                className="group block bg-white dark:bg-[#1C191A] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-transparent hover:border-secondary"
                             >
-                                <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden">
+                                <div className="relative aspect-[4/3] bg-gray-100 dark:bg-gray-800 overflow-hidden">
                                     {project.image ? (
                                         <Image
                                             src={project.image}
@@ -90,10 +90,10 @@ export default function Work() {
                                     <h3 className="!font-sans text-2xl mb-2 group-hover:text-accent transition-colors font-semibold">
                                         {project.title}
                                     </h3>
-                                    <p className="text-sm font-medium text-gray-500 mb-4 uppercase tracking-wider">
+                                    <p className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-4 uppercase tracking-wider">
                                         {project.role}
                                     </p>
-                                    <p className="text-gray-600 leading-relaxed">
+                                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                                         {project.desc}
                                     </p>
                                 </div>

@@ -8,7 +8,7 @@ export default function Contact() {
     const { t } = useLanguage();
 
     return (
-        <section id="contact" className="pt-20 md:pt-32 pb-8 bg-white">
+        <section id="contact" className="pt-20 md:pt-32 pb-8 bg-white dark:bg-[#1C191A]">
             <div className="container mx-auto px-6 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -19,7 +19,7 @@ export default function Contact() {
                     <h2 className="font-serif text-4xl md:text-5xl mb-6 font-semibold">
                         {t("contact_title")}
                     </h2>
-                    <p className="text-lg text-gray-600 mb-12">
+                    <p className="text-lg text-gray-600 dark:text-gray-300 mb-12">
                         {t("contact_desc")}
                     </p>
 
@@ -33,20 +33,20 @@ export default function Contact() {
                                     <EnvelopeSimple size={24} />
                                 </div>
                                 <div className="text-left">
-                                    <span className="block text-xs text-gray-400 uppercase tracking-wider">Email</span>
-                                    <span className="text-lg font-medium text-gray-900 group-hover:text-accent transition-colors">panalee.wrk@gmail.com</span>
+                                    <span className="block text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wider">Email</span>
+                                    <span className="text-lg font-medium text-gray-900 dark:text-gray-100 group-hover:text-accent transition-colors">panalee.wrk@gmail.com</span>
                                 </div>
                             </a>
 
-                            <div className="hidden md:block w-px h-12 bg-gray-200"></div>
+                            <div className="hidden md:block w-px h-12 bg-gray-200 dark:bg-gray-700"></div>
 
                             <div className="flex items-center gap-4 group">
                                 <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center text-accent shadow-sm group-hover:scale-110 transition-transform">
                                     <Phone size={24} />
                                 </div>
                                 <div className="text-left">
-                                    <span className="block text-xs text-gray-400 uppercase tracking-wider">Phone</span>
-                                    <span className="text-lg font-medium text-gray-900">+66 9-9230-9111</span>
+                                    <span className="block text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wider">Phone</span>
+                                    <span className="text-lg font-medium text-gray-900 dark:text-gray-100">+66 9-9230-9111</span>
                                 </div>
                             </div>
                         </div>
@@ -54,15 +54,17 @@ export default function Contact() {
 
                     <div className="flex justify-center gap-6">
                         <a
-                            href="#"
-                            className="flex items-center gap-2 px-8 py-3 border border-gray-200 rounded-full text-gray-600 hover:border-gray-900 hover:text-gray-900 transition-all duration-300"
+                            href="http://www.linkedin.com/in/panalee-palasri"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 px-8 py-3 border border-gray-200 dark:border-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:border-gray-900 hover:text-gray-900 dark:text-gray-100 transition-all duration-300"
                         >
                             <LinkedinLogo size={20} />
                             <span>LinkedIn</span>
                         </a>
                         <a
                             href="#"
-                            className="flex items-center gap-2 px-8 py-3 border border-gray-200 rounded-full text-gray-600 hover:border-gray-900 hover:text-gray-900 transition-all duration-300"
+                            className="flex items-center gap-2 px-8 py-3 border border-gray-200 dark:border-gray-800 rounded-full text-gray-600 dark:text-gray-300 hover:border-gray-900 hover:text-gray-900 dark:text-gray-100 transition-all duration-300"
                         >
                             <BehanceLogo size={20} />
                             <span>Behance</span>
@@ -70,7 +72,7 @@ export default function Contact() {
                     </div>
                 </motion.div>
 
-                <footer className="mt-20 text-gray-400 text-sm">
+                <footer className="mt-20 text-gray-400 dark:text-gray-500 text-sm">
                     <p>&copy; {new Date().getFullYear()} Panalee Palasri. All rights reserved.</p>
                 </footer>
             </div>
